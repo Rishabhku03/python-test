@@ -35,3 +35,10 @@ jobs:
         pip install pytest
         export PYTHONPATH=src
         pytest
+    - name: Bulid and Push Docker Image
+      uses: mr—smithers-excellent/docker-build-push@v4
+      with:
+        image: rishabhkuku/python-test
+        registry: docker.io
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
