@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure Functions: https://aka.ms/python-webapps-actions
 
-name: Function-CICD-Monoline
+name: main_functionapprishabh
 
 on:
 
@@ -19,11 +19,7 @@ on:
         required: true
         default: 'https://functionapprishabh.azurewebsites.net'
         
-       # This is the path of your Function app in Git.
-      GIT_FunctionApp_PATH:
-        description: 'Relative path for Function'
-        required: true
-        default: '/src'
+       
 
 jobs:
   build:
